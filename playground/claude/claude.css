@@ -1,0 +1,35 @@
+/* Custom Grid für Desktop - Option A */
+@media (min-width: 1024px) {
+    #cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Supervisor - links, vertikal zentriert über beide Rows */
+    .card-supervisor {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+
+    /* Team Builder - Mitte oben */
+    .card-team-builder {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* Karma - Mitte unten */
+    .card-karma {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Calculator - rechts, vertikal zentriert über beide Rows */
+    .card-calculator {
+        grid-column: 3;
+        grid-row: 1 / 3;
+        align-self: center;
+    }
+}
